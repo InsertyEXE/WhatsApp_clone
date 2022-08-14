@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">Zap_clone</string>
+    <string name="teste">Fortune plango vulnera Stillantibus ocellis - llantibus ocellis Quod sua michi munera Subtrahit rebellis - trahit rebellis</string>
+    <string name="conversar">Conversar</string>
+    <string name="status">Status</string>
+    <string name="chamadas">Chamadas</string>
+
+    <string name="meu_status">Meu status</string>
+    <string name="adicioanr_status">Toque para atualziar seu status</string>
+    <string name="outros_status">"Atualizações recentes</string>
+    <string name="sem_resultado">Nenhuma atividade recente</string>
+</resources>
