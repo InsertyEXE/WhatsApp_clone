@@ -9,4 +9,7 @@
     <string name="adicioanr_status">Toque para atualziar seu status</string>
     <string name="outros_status">"Atualizações recentes</string>
     <string name="sem_resultado">Nenhuma atividade recente</string>
+    <string name="title_activity_main">MainActivity</string>
+    <string name="tab_text_1">Tab 1</string>
+    <string name="tab_text_2">Tab 2</string>
 </resources>

@@ -1,80 +1,63 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".view.MainActivity">
+    tools:context=".MainActivity">
 
 
-    <androidx.coordinatorlayout.widget.CoordinatorLayout
-        android:id="@+id/coordinator"
+    <com.google.android.material.appbar.AppBarLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        app:layout_constraintTop_toTopOf="parent">
+        android:background="@color/green">
 
-        <com.google.android.material.appbar.AppBarLayout
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar_main"
+            android:layout_width="match_parent"
+            android:layout_height="54dp"
+            app:layout_scrollFlags="scroll|enterAlways"
+            app:titleTextColor="@color/white">
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/toolbar_options"
+                android:layout_width="40dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="end"
+                android:src="@drawable/ic_options_24" />
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/toolbar_search"
+                android:layout_width="40dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="end"
+                android:src="@drawable/ic_search_24" />
+
+        </androidx.appcompat.widget.Toolbar>
+
+        <com.google.android.material.tabs.TabLayout
+            android:id="@+id/tabs"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:background="@color/green">
+            app:tabBackground="@color/green"
+            app:tabSelectedTextColor="@color/white"
+            app:tabTextColor="#AAFFFFFF" />
+    </com.google.android.material.appbar.AppBarLayout>
 
-            <androidx.appcompat.widget.Toolbar
-                android:id="@+id/toolbar_main"
-                android:layout_width="match_parent"
-                android:layout_height="54dp"
-                app:titleTextColor="@color/white"
-                app:layout_scrollFlags="scroll|enterAlways">
-
-                <androidx.appcompat.widget.AppCompatImageView
-                    android:id="@+id/toolbar_options"
-                    android:layout_width="40dp"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="end"
-                    android:src="@drawable/ic_options_24" />
-
-                <androidx.appcompat.widget.AppCompatImageView
-                    android:id="@+id/toolbar_search"
-                    android:layout_width="40dp"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="end"
-                    android:src="@drawable/ic_search_24" />
-
-            </androidx.appcompat.widget.Toolbar>
-        </com.google.android.material.appbar.AppBarLayout>
-    </androidx.coordinatorlayout.widget.CoordinatorLayout>
-
-    <com.google.android.material.tabs.TabLayout
-        android:id="@+id/tabLayout"
+    <androidx.viewpager.widget.ViewPager
+        android:id="@+id/view_pager"
         android:layout_width="match_parent"
-        android:layout_height="0dp"
-        app:layout_constraintTop_toBottomOf="@+id/coordinator"
-        app:tabBackground="@color/green"
-        app:tabSelectedTextColor="@color/white"
-        app:tabTextColor="#AAFFFFFF">
+        android:layout_height="match_parent"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior" />
 
-        <com.google.android.material.tabs.TabItem
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="@string/conversar" />
-
-        <com.google.android.material.tabs.TabItem
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="@string/status" />
-
-        <com.google.android.material.tabs.TabItem
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="@string/chamadas" />
-
-    </com.google.android.material.tabs.TabLayout>
-
-    <androidx.fragment.app.FragmentContainerView
-        android:id="@+id/fragment_main"
-        android:layout_width="match_parent"
-        android:layout_height="0dp"
-        tools:layout="@layout/fragment_conversations"
-        app:layout_constraintTop_toBottomOf="@+id/tabLayout"
-        app:layout_constraintBottom_toBottomOf="parent"/>
-
-</androidx.constraintlayout.widget.ConstraintLayout>
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/fab"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|end"
+        android:layout_marginEnd="@dimen/fab_margin"
+        android:layout_marginBottom="16dp"
+        app:tint="@color/white"
+        app:backgroundTint="@color/green"
+        app:srcCompat="@drawable/message" />
+</androidx.coordinatorlayout.widget.CoordinatorLayout>
