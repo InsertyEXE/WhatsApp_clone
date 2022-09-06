@@ -10,6 +10,14 @@
     <string name="outros_status">"Atualizações recentes</string>
     <string name="sem_resultado">Nenhuma atividade recente</string>
     <string name="title_activity_main">MainActivity</string>
-    <string name="tab_text_1">Tab 1</string>
-    <string name="tab_text_2">Tab 2</string>
+    <string name="email">Email</string>
+    <string name="password">Senha</string>
+    <string name="enter">Entrar</string>
+    <string name="or">Ou</string>
+    <string name="does_not_have_account">Não tenho uma conta \n Quero me <b>cadastrar agora!</b></string>
+    <string name="email_register">Insira seu email</string>
+    <string name="password_register">Criar senha</string>
+    <string name="password_rept">Confirmar senha</string>
+    <string name="register">Cadastrar</string>
+    <string name="email_error">Email inválido</string>
 </resources>

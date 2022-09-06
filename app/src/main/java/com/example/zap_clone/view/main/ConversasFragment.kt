@@ -1,4 +1,4 @@
-package com.example.zap_clone.ui.main
+package com.example.zap_clone.view.main
 
 import android.os.Bundle
 import android.view.View

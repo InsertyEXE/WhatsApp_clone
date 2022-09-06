@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".view.register.RegisterActivity"
+    android:focusableInTouchMode="true">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_gravity="center_horizontal"
+                android:src="@drawable/whatsapp_logo"
+                android:layout_margin="24sp"/>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/register_input_email"
+                style="@style/Theme.Zap_clone.FormInputLayout"
+                app:hintEnabled="false">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/register_edt_email"
+                    style="@style/Theme.Zap_clone.FormEditText"
+                    android:background="@drawable/edit_text_form"
+                    android:hint="@string/email_register"
+                    android:inputType="textEmailAddress"/>
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/register_input_senha"
+                style="@style/Theme.Zap_clone.FormInputLayout"
+                app:hintEnabled="false">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/register_edt_password"
+                    style="@style/Theme.Zap_clone.FormEditText"
+                    android:background="@drawable/edit_text_form"
+                    android:hint="@string/password_register"
+                    android:inputType="textPassword"/>
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/register_input_reptPassword"
+                style="@style/Theme.Zap_clone.FormInputLayout"
+                app:hintEnabled="false">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/register_edt_reptPassword"
+                    style="@style/Theme.Zap_clone.FormEditText"
+                    android:background="@drawable/edit_text_form"
+                    android:hint="@string/password_rept"
+                    android:inputType="textPassword"/>
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <Button
+                android:id="@+id/register_btn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:backgroundTint="@color/green_light"
+                android:text="@string/register"
+                android:layout_marginStart="36dp"
+                android:layout_marginEnd="36dp"/>
+
+        </LinearLayout>
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

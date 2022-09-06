@@ -3,14 +3,21 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/Android studio/Projetos Kotlin/Zap_clone/app/src/main/res/drawable/background.xml" value="0.1915" />
+        <entry key="..\:/Android studio/Projetos Kotlin/Zap_clone/app/src/main/res/drawable/cursor_form.xml" value="0.1" />
+        <entry key="..\:/Android studio/Projetos Kotlin/Zap_clone/app/src/main/res/drawable/edit_text_form.xml" value="0.1915" />
         <entry key="..\:/Android studio/Projetos Kotlin/Zap_clone/app/src/main/res/drawable/ic_options_24.xml" value="0.246" />
         <entry key="..\:/Android studio/Projetos Kotlin/Zap_clone/app/src/main/res/drawable/ic_search_24.xml" value="0.246" />
         <entry key="..\:/Android studio/Projetos Kotlin/Zap_clone/app/src/main/res/drawable/tab_color_selector.xml" value="0.246" />
+        <entry key="..\:/Android studio/Projetos Kotlin/Zap_clone/app/src/main/res/layout/activity_login.xml" value="0.33" />
         <entry key="..\:/Android studio/Projetos Kotlin/Zap_clone/app/src/main/res/layout/activity_main.xml" value="0.25" />
+        <entry key="..\:/Android studio/Projetos Kotlin/Zap_clone/app/src/main/res/layout/activity_register.xml" value="0.25" />
         <entry key="..\:/Android studio/Projetos Kotlin/Zap_clone/app/src/main/res/layout/fragment_conversations.xml" value="0.22" />
         <entry key="..\:/Android studio/Projetos Kotlin/Zap_clone/app/src/main/res/layout/fragment_main.xml" value="0.2552083333333333" />
         <entry key="..\:/Android studio/Projetos Kotlin/Zap_clone/app/src/main/res/layout/fragment_stats.xml" value="0.25" />
         <entry key="..\:/Android studio/Projetos Kotlin/Zap_clone/app/src/main/res/layout/item_conversation.xml" value="0.25" />
+        <entry key="..\:/Android studio/Projetos Kotlin/Zap_clone/app/src/main/res/layout/loading_button.xml" value="0.1" />
+        <entry key="..\:/Android studio/Projetos Kotlin/Zap_clone/app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml" value="0.1" />
       </map>
     </option>
   </component>

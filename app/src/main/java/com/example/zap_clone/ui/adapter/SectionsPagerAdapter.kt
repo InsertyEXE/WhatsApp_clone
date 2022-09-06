@@ -1,10 +1,18 @@
-package com.example.zap_clone.ui.main
+package com.example.zap_clone.ui.adapter
 
 import android.content.Context
 import androidx.fragment.app.Fragment
 import androidx.fragment.app.FragmentManager
 import androidx.fragment.app.FragmentPagerAdapter
 import com.example.zap_clone.R
+import com.example.zap_clone.view.main.ConversasFragment
+import com.example.zap_clone.view.main.StatusFragment
+
+/*
+
+        ADAPTER DA TABLAYOUT
+
+ */
 
 private val TAB_TITLES = arrayOf(
     R.string.conversar,
