@@ -20,4 +20,8 @@
     <string name="password_rept">Confirmar senha</string>
     <string name="register">Cadastrar</string>
     <string name="email_error">Email inválido</string>
+    <string name="password_error">A senha deve conter ao menos 6 digitos</string>
+    <string name="repassword_error">As senhas devem ser as mesmas</string>
+    <string name="sucess_register">Usuario cadastrado com sucesso :D</string>
+    <string name="failure_message">Não foi possível cadastrar usuario, tente novamente mais tarde</string>
 </resources>

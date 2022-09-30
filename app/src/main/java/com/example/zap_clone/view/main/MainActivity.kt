@@ -6,7 +6,7 @@ import com.google.android.material.snackbar.Snackbar
 import com.google.android.material.tabs.TabLayout
 import androidx.viewpager.widget.ViewPager
 import androidx.appcompat.app.AppCompatActivity
-import com.example.zap_clone.ui.adapter.SectionsPagerAdapter
+import com.example.zap_clone.view.adapter.SectionsPagerAdapter
 import com.example.zap_clone.databinding.ActivityMainBinding
 
 class MainActivity : AppCompatActivity() {

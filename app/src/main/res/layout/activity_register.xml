@@ -39,7 +39,7 @@
             </com.google.android.material.textfield.TextInputLayout>
 
             <com.google.android.material.textfield.TextInputLayout
-                android:id="@+id/register_input_senha"
+                android:id="@+id/register_input_password"
                 style="@style/Theme.Zap_clone.FormInputLayout"
                 app:hintEnabled="false">
 
@@ -65,12 +65,12 @@
 
             </com.google.android.material.textfield.TextInputLayout>
 
-            <Button
+            <com.example.zap_clone.util.LoadingButton
                 android:id="@+id/register_btn"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:backgroundTint="@color/green_light"
-                android:text="@string/register"
+                app:text="@string/register"
                 android:layout_marginStart="36dp"
                 android:layout_marginEnd="36dp"/>
 

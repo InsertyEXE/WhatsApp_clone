@@ -1,4 +1,4 @@
-package com.example.zap_clone.ui.adapter
+package com.example.zap_clone.view.adapter
 
 import android.content.Context
 import androidx.fragment.app.Fragment
