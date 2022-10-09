@@ -14,12 +14,8 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Zap_clone"
         tools:targetApi="31">
-        <activity
-            android:name=".PerfilActivity"
-            android:exported="false" />
-        <activity
-            android:name=".view.register.RegisterActivity"
-            android:exported="true"></activity>
+
+
         <activity
             android:name=".view.login.LoginActivity"
             android:exported="true">
@@ -29,6 +25,12 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+
+        <activity android:name=".view.register.view.RegisterActivity"
+            android:exported="false">
+
+        </activity>
+
         <activity
             android:name=".view.main.MainActivity"
             android:exported="false" />

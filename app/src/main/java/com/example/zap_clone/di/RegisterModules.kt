@@ -1,16 +1,25 @@
 package com.example.zap_clone.di
 
-import com.example.zap_clone.util.ICallback
-import com.example.zap_clone.view.register.IRegisterView
-import com.example.zap_clone.view.register.RegisterViewModel
-import com.example.zap_clone.view.register.repository.RegisterRepository
-import com.example.zap_clone.view.register.repository.RegisterRepositoryImp
+import com.example.zap_clone.view.register.model.IRegisterEmailCallback
+import com.example.zap_clone.view.register.model.IRegisterEmailView
+import com.example.zap_clone.view.register.model.IRegisterNameView
+import com.example.zap_clone.view.register.viewmodel.RegisterEmailViewModel
+import com.example.zap_clone.view.register.data.RegisterEmailRepository
+import com.example.zap_clone.view.register.data.RegisterEmailRepositoryImp
+import com.example.zap_clone.view.register.data.RegisterNameRepository
+import com.example.zap_clone.view.register.data.RegisterNameRepositoryImp
+import com.example.zap_clone.view.register.model.IRegisterNameCallback
+import com.example.zap_clone.view.register.viewmodel.RegisterNameViewModel
 import org.koin.androidx.viewmodel.dsl.viewModel
 import org.koin.dsl.module
 
 val RegisterModule = module {
 
-    viewModel { (view: IRegisterView, callback: ICallback) ->
-        RegisterViewModel(view, RegisterRepository(RegisterRepositoryImp(callback)))
+    viewModel { (view: IRegisterEmailView, callback: IRegisterEmailCallback) ->
+        RegisterEmailViewModel(view, RegisterEmailRepository(RegisterEmailRepositoryImp(callback)))
+    }
+
+    viewModel{ (view: IRegisterNameView, callback: IRegisterNameCallback) ->
+        RegisterNameViewModel(view, RegisterNameRepository(RegisterNameRepositoryImp(callback)))
     }
 }

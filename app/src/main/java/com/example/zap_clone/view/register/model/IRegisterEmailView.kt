@@ -1,13 +1,11 @@
-package com.example.zap_clone.view.register
+package com.example.zap_clone.view.register.model
 
-import com.example.zap_clone.util.ICallback
-
-interface IRegisterView: ICallback {
+interface IRegisterEmailView: IRegisterEmailCallback {
 
     fun displayEmailError(emailError: Int?)
     fun displayRepPasswordError(repPasswordError: Int?)
     fun displayPasswordError(passwordError: Int?)
     fun showProgressBar(enabled: Boolean)
-    fun openProfileActivity()
+    fun goToName(email: String)
 
 }

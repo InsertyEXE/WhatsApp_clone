@@ -1,16 +1,17 @@
-package com.example.zap_clone.view.register
+package com.example.zap_clone.view.register.viewmodel
 
 import android.util.Patterns
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
 import com.example.zap_clone.R
-import com.example.zap_clone.view.register.repository.RegisterRepository
+import com.example.zap_clone.view.register.model.IRegisterEmailView
+import com.example.zap_clone.view.register.data.RegisterEmailRepository
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.launch
 
-class RegisterViewModel(
-    private var view: IRegisterView?,
-    private val repository: RegisterRepository
+class RegisterEmailViewModel(
+    private var view: IRegisterEmailView?,
+    private val repository: RegisterEmailRepository
 ) :
     ViewModel() {
 
@@ -30,9 +31,7 @@ class RegisterViewModel(
 
         if (isEmailValid && isPasswordValid && isEqualPassword) {
             view?.showProgressBar(true)
-            viewModelScope.launch(Dispatchers.IO) {
-                repository.registerUser(email, password)
-            }
+            repository.registerUser(email, password)
         }
     }
 }

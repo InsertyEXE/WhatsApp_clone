@@ -24,4 +24,19 @@
     <string name="repassword_error">As senhas devem ser as mesmas</string>
     <string name="sucess_register">Usuario cadastrado com sucesso :D</string>
     <string name="failure_message">Não foi possível cadastrar usuario, tente novamente mais tarde</string>
+
+    <string name="welcome_to_zap"><b>BEM-VINDO!!\n Esse aplicativo é um clone do whatsApp, apenas para fins de estudos.</b>\nObrigado por me baixar e me testar :D</string>
+    <string name="name_register">Nos diga seu nome</string>
+    <string name="continuar">Continuar</string>
+    <string name="welcome_user">Bem vindo %1$s</string>
+    <string name="not_null">Esse campo não pode ser vazio</string>
+    <string name="login_error">Email ou senha inválidos</string>
+    <string name="contentDescription_main_menu">Mais opções</string>
+    <string name="new_group">Novo grupo</string>
+    <string name="settings">Configurações</string>
+    <string name="new_transmission">Nova transmissão</string>
+    <string name="menu_main_deviceConnected">Aperelhos conectados</string>
+    <string name="menu_main_favMessages">Mensagens favoritas</string>
+    <string name="menu_main_findCompanies">Encontrar empresas</string>
+    <string name="menu_main_payments">Pagamentos</string>
 </resources>
