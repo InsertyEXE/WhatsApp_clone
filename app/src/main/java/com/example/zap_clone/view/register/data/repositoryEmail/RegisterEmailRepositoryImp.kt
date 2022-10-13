@@ -1,4 +1,4 @@
-package com.example.zap_clone.view.register.data
+package com.example.zap_clone.view.register.data.repositoryEmail
 
 import com.example.zap_clone.view.register.model.IRegisterEmailCallback
 import com.example.zap_clone.R

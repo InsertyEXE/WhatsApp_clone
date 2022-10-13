@@ -16,7 +16,7 @@ class LoginRepositoryImp(private val callback: ILoginCallback) {
                     val id = FirebaseAuth.getInstance().currentUser?.uid
                     FirebaseFirestore.getInstance().collection("USERS").document(id.toString())
                         .get().addOnSuccessListener { userFirestore ->
-                            if (userFirestore.exists()) callback.onSucess(User(id, userFirestore.getString("name"), email))
+                            if (userFirestore.exists()) callback.onSucess(User(id, userFirestore.getString("name"), email, userFirestore.getString("profilePicture")))
                         }
                 }
             }

@@ -2,12 +2,9 @@ package com.example.zap_clone.view.register.viewmodel
 
 import android.util.Patterns
 import androidx.lifecycle.ViewModel
-import androidx.lifecycle.viewModelScope
 import com.example.zap_clone.R
 import com.example.zap_clone.view.register.model.IRegisterEmailView
-import com.example.zap_clone.view.register.data.RegisterEmailRepository
-import kotlinx.coroutines.Dispatchers
-import kotlinx.coroutines.launch
+import com.example.zap_clone.view.register.data.repositoryEmail.RegisterEmailRepository
 
 class RegisterEmailViewModel(
     private var view: IRegisterEmailView?,

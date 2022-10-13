@@ -1,4 +1,4 @@
-package com.example.zap_clone.view.register.data
+package com.example.zap_clone.view.register.data.repositoryEmail
 
 class RegisterEmailRepository(private val repository: RegisterEmailRepositoryImp) {
 

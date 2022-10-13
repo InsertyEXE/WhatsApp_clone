@@ -39,4 +39,6 @@
     <string name="menu_main_favMessages">Mensagens favoritas</string>
     <string name="menu_main_findCompanies">Encontrar empresas</string>
     <string name="menu_main_payments">Pagamentos</string>
+    <string name="new_contact">Novo contato</string>
+    <string name="find_companies">Encontrar empresas</string>
 </resources>

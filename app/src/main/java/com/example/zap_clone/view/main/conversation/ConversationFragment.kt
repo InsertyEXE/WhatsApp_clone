@@ -1,4 +1,4 @@
-package com.example.zap_clone.view.main
+package com.example.zap_clone.view.main.conversation
 
 import android.os.Bundle
 import android.view.View
@@ -6,7 +6,7 @@ import androidx.fragment.app.Fragment
 import com.example.zap_clone.R
 import com.example.zap_clone.databinding.FragmentConversationsBinding
 
-class ConversasFragment: Fragment(R.layout.fragment_conversations) {
+class ConversationFragment: Fragment(R.layout.fragment_conversations) {
 
     private var binding: FragmentConversationsBinding? = null
 

@@ -1,4 +1,4 @@
-package com.example.zap_clone.view.register.data
+package com.example.zap_clone.view.register.data.repositoryName
 
 import com.example.zap_clone.model.User
 

@@ -19,13 +19,7 @@
             app:layout_scrollFlags="scroll|enterAlways"
             app:titleTextColor="@color/white">
 
-            <androidx.appcompat.widget.AppCompatImageView
-                android:id="@+id/toolbar_options"
-                android:layout_width="40dp"
-                android:layout_height="wrap_content"
-                android:layout_gravity="end"
-                android:contentDescription="@string/contentDescription_main_menu"
-                android:src="@drawable/ic_options_24" />
+
 
             <androidx.appcompat.widget.AppCompatImageView
                 android:id="@+id/toolbar_search"

@@ -14,7 +14,7 @@ class MyApp: Application() {
             androidLogger()
             androidContext(this@MyApp)
 
-            modules(LoginModule, RegisterModule)
+            modules(LoginModule, RegisterModule, StatsModule)
         }
     }
 }

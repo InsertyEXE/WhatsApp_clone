@@ -1,11 +1,9 @@
-package com.example.zap_clone.view.register.data
+package com.example.zap_clone.view.register.data.repositoryName
 
 import com.example.zap_clone.R
 import com.example.zap_clone.model.User
 import com.example.zap_clone.view.register.model.IRegisterNameCallback
 import com.google.firebase.firestore.FirebaseFirestore
-import kotlinx.coroutines.Dispatchers
-import kotlinx.coroutines.withContext
 
 class RegisterNameRepositoryImp(private val callback: IRegisterNameCallback) : IRegisterNameRepo {
     override  fun saveUserFirestore(user: User) {
